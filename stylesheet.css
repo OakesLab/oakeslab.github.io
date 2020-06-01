@@ -272,7 +272,7 @@ h3.pub-title{
 
 .alumni-picture {
 	display: inline-block;
-	width: 10%;
+	width: 20%;
 	max-width: 100px;
 	float: left;
 }
@@ -283,9 +283,20 @@ h3.pub-title{
 	font-size: 1em;
 	padding-left: 10px;
 }
+.alumni-pubs {
+	display: inline-block;
+	width: 40%;
+	max-width: 400px;
+	font-size: 0.8em;
+	padding-left: 10px;
+	vertical-align: top;
+}
 
 .pict {
 	width: 100%;
+}
+.social {
+	max-height: 1em;
 }
 .person-details {
 	width: 73%;
