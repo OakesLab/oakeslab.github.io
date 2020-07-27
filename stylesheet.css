@@ -261,7 +261,11 @@ h3.pub-title{
 	text-transform: uppercase;
 	clear: both;
 }
-
+.people-publications {
+	width: 90%;
+	display: inline-block;
+	margin: 2% 3.5% 0% 3%;
+}
 .headshot {
 	display: inline-block;
 	width: 25%;
@@ -269,7 +273,14 @@ h3.pub-title{
 	max-width: 375px;
 	float: left;
 }
-
+.headshot2 {
+	display: inline-block;
+	width: 25%;
+	/*max-height: 312px;*/
+	max-width: 375px;
+	float: left;
+	margin-left: -2%;
+}
 .alumni-picture {
 	display: inline-block;
 	width: 20%;
