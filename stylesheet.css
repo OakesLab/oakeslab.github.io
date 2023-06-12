@@ -248,6 +248,22 @@ h3.pub-title{
 	margin-top: 0px;
 	color: #66806D;
 }
+.pub-header {
+	font-size: 1.25em;
+	font-weight: : 600;
+/*	text-transform: uppercase;*/
+	margin-bottom: 0px;
+	margin-top: 0px;
+	clear: both;
+}
+
+year-link {
+	font-size: 1.3em;
+	font-weight: : bold;
+/*	text-transform: uppercase;*/
+	color: #66806D;
+}
+
 .person {
 	width: 90%;
 	margin: auto;
@@ -501,7 +517,12 @@ a.unadorned, a.unadorned2 {
 	text-decoration: none;
 }
 
-a.unadorned2:hover {
+a.unadorned3 {
+	text-decoration: none;
+	color: #66806D;
+}
+
+a.unadorned2:hover, a.unadorned3:hover {
 	text-decoration: underline;
 }
 a.unadorned:visited, a.unadorned:link, a.unadorned2:visited, a.unadorned:link {
