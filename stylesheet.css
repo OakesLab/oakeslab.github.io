@@ -3,6 +3,11 @@
 <meta name="copyright" content="CC-BY-NC-SA : https://creativecommons.org/licenses/by-nc-sa/4.0/">
 */
 
+:root {
+/*	--primary-color: #66806D;    /*  Green */
+	--primary-color: #7b002c;    /*  Maroon */
+	--primary-font: Quicksand, Open Sans, Arial, Helvetica, sans-serif;
+}
 
 * {
 	border: 0px solid black;
@@ -17,7 +22,8 @@ body, html {
 	width: 100%;
 	padding: 0;
 	margin: 0 auto;
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+/*	font-family: Open Sans, Arial, Helvetica, sans-serif;*/
+	font-family: var(--primary-font);
 }
 
 #header {
@@ -28,7 +34,8 @@ body, html {
 	text-align: right;
 	line-height: 40px;
 	font-size: 1em;
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+/*	font-family: Open Sans, Arial, Helvetica, sans-serif;*/
+	font-family: var(--primary-font);
 	color: #778899;
 	padding-right: 10px;
 	text-transform: uppercase;
@@ -47,6 +54,12 @@ body, html {
 	top: 0%;
 }
 
+.nav-image {
+	width: 215px;
+	padding-top: 50px;
+}
+
+
 #nav-inner {
 	overflow-y: auto;
 	height: 100%;
@@ -55,7 +68,8 @@ body, html {
 #logo {
 	width: 200px;
 	height: 150px;
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+/*	font-family: Open Sans, Arial, Helvetica, sans-serif;*/
+	font-family: var(--primary-font);
 	font-weight: 600;
 	font-size: 19px;
 	letter-spacing: -1px;
@@ -98,7 +112,8 @@ h2 {
 	background-color: #FFFFFF;
 	font-size: 14px;
 	padding-left: 10px;
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+/*	font-family: Open Sans, Arial, Helvetica, sans-serif;*/
+	font-family: var(--primary-font);
 	text-transform: uppercase;
 	font-weight: 400;
 }
@@ -152,13 +167,35 @@ a.unadorned-nav:visited, a.unadorned-nav:link {
 	display: inline-block;
 	margin: 2% 3.5% 2% 3.5%;
 }
-.research-text {
-	width: 45%;
+.research-text-left {
+	width: 41%;
 	display: inline-block;
 	margin: 2% 1.5% 2% 3%;
 	float: left;
+	box-shadow: 2px 2px 5px 2px black;
+	padding: 2% 2% 2% 2%;
+
 }
-.research-img {
+.research-text-right {
+	width: 41%;
+	display: inline-block;
+	margin: 2% 1.5% 2% 3%;
+	float: right;
+	box-shadow: 2px 2px 5px 2px black;
+	padding: 2% 2% 2% 2%;
+
+}
+.research-collab {
+	width: 91.5%;
+	display: inline-block;
+	margin: 2% 1.5% 2% 3%;
+	float: left;
+	box-shadow: 2px 2px 5px 2px black;
+	padding: 2% 2% 2% 2%;
+
+}
+
+.research-img-right {
 	width: 45%;
 	height: 100%;
 	display: inline-block;
@@ -166,19 +203,54 @@ a.unadorned-nav:visited, a.unadorned-nav:link {
 	margin: 2% 3% 2% 1.5%;
 	float: right;
 }
+.research-img-left {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	align-items: center;
+	margin: 2% 3% 2% 1.5%;
+	float: left;
+}
+
+.research-list {
+  list-style-type: square;
+/*  color: var(--primary-color);*/
+  /* Add more styles as needed */
+}
+.research-list::marker {
+  color: var(--primary-color);
+  /* Add more styles as needed */
+}
 
 .res-title {
 	margin-bottom: 5px;
 	margin-top: 0px;
-	color: #66806D;
+	color: var(--primary-color);
+/*	color: black;*/
 	font-size: 1.5em;
 	text-align: center;
 
 }
+
+.res-collab-title {
+	font-size: 1em;
+	color: var(--primary-color);
+	margin: 0%;
+}
+
+.res-titlemain {
+	margin-bottom: 5px;
+	margin-top: 0px;
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+
+}
+
 .res-bigpicture {
 	margin-bottom: 5px;
 	margin-top: 0px;
-	color: #66806D;
+	color: var(--primary-color);
 	font-size: 2.0em;
 	text-align: center;
 }
@@ -199,7 +271,7 @@ a.unadorned-nav:visited, a.unadorned-nav:link {
 }
 .covers {
 	display: inline-block;
-	width: 15%;
+	width: 12.5%;
 	height: auto;
 	max-height: 332px;
 	max-width: 257px;
@@ -212,7 +284,8 @@ a.unadorned-nav:visited, a.unadorned-nav:link {
 }
 li span{
 	font-size: 1.2em;
-	color: #66806D;
+/*	color: #66806D;*/
+	color: var(--primary-color);
 	margin-right: 5px;
 }
 .news-list li {
@@ -246,7 +319,10 @@ li span{
 h3.pub-title{
 	margin-bottom: 0px;
 	margin-top: 0px;
-	color: #66806D;
+/*	color: #66806D;*/
+/*	color: #004080;*/
+/*	color: #7b002c;*/
+	color: var(--primary-color);
 }
 .pub-header {
 	font-size: 1.25em;
@@ -261,7 +337,7 @@ year-link {
 	font-size: 1.3em;
 	font-weight: : bold;
 /*	text-transform: uppercase;*/
-	color: #66806D;
+	color: var(--primary-color);
 }
 
 .person {
@@ -272,10 +348,17 @@ year-link {
 	clear: both;
 }
 .people-header {
+/*	width: 70%;*/
 	font-size: 1.5em;
 	font-weight: 600;
 	text-transform: uppercase;
 	clear: both;
+/*	color: white;*/
+	text-align: center;
+	background-color: #e0e0e0;
+/*	margin-left: 15%;*/
+/*	margin-right: 15%;*/
+/*	box-shadow: 2px 2px 5px 2px #7b002c;*/
 }
 .people-publications {
 	width: 90%;
@@ -288,6 +371,9 @@ year-link {
 	/*max-height: 312px;*/
 	max-width: 375px;
 	float: left;
+	/*border-radius: 50%;  Creates a circular shape */
+    /*overflow: hidden;  Ensures the image stays within the circle */
+
 }
 .headshot2 {
 	display: inline-block;
@@ -360,7 +446,15 @@ h3.labmember-name {
 	font-size: 1.3em;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #66806D;
+	color: var(--primary-color);
+}
+
+h3.announcement3 {
+	text-transform: uppercase;
+	font-size: 1.7em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: var(--primary-color);
 }
 
 h3.alumni-name {
@@ -368,7 +462,7 @@ h3.alumni-name {
 	font-size: 1.0em;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #66806D;
+	color: var(--primary-color);
 }
 .email {
 	color: #778899;;
@@ -397,7 +491,7 @@ h3.linkheader {
 	font-size: 1.3em;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #66806D;
+	color: var(--primary-color);
 }
 .linktitles {
 	width: 95%;
@@ -515,18 +609,29 @@ footer {
 
 a.unadorned, a.unadorned2 {
 	text-decoration: none;
+	color: var(--primary-color);
 }
 
 a.unadorned3 {
 	text-decoration: none;
-	color: #66806D;
+	color: #778899;
+}
+
+a.unadorned4 {
+	text-decoration: none;
+	color: black;
 }
 
 a.unadorned2:hover, a.unadorned3:hover {
 	text-decoration: underline;
 }
 a.unadorned:visited, a.unadorned:link, a.unadorned2:visited, a.unadorned:link {
-	color: #778899;
+/*	color: #778899;*/
+	color: var(--primary-color);
+}
+a.unadorned4:visited, a.unadorned4:link {
+	text-decoration:none;
+	color: black;
 }
 a.noline, a.noline:visited {
 	text-decoration:none;
@@ -565,6 +670,10 @@ body {
 #nav-inner {
 	overflow-y: auto;
 	height: auto;
+}
+
+.nav-image {
+	display: none;
 }
 #logo {
 	width: 100%;
@@ -628,22 +737,28 @@ h2 {
 	display: block;
 	margin: auto;
 }
-.research-text {
-	width: 94%;
+.research-text-right, .research-text-left {
+	width: 90%;
 	/*height: 200px;*/
 	display: block;
-	margin: 0%;
+/*	margin: 0%;*/
 	padding: 3%;
 	float: none;
 	
 }
-.research-img {
-	width: 94%;
+.research-img-right, .research-img-left {
+	width: 90%;
 	/*height: 200px;*/
 	display: block;
-	margin: 0%;
+/*	margin: 0%;*/
 	padding: 3%;
 	float: none;
+}
+.research-collab {
+	width: 90%;
+	padding: 3%;
+	float: none;
+/*	margin: 0%;*/
 }
 
 .res-title {
@@ -737,7 +852,7 @@ footer {
 	color: #778899;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 2.5em;
+	font-size: 1.25em;
 }
 #footleft {
 	float: none;

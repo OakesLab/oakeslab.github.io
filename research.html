@@ -12,7 +12,10 @@
 	</script>
 
 	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
-	<link href="https://fonts.googleapis.com/css?family=Cantarell|Open+Sans:400,600,900" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Cantarell|Open+Sans:400,600,900" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" sizes="16x16 24x24 32x32 64x64" href="favicon.ico">
 
 	<meta name="author" content="Patrick Oakes - https://github.com/OakesLab">
@@ -74,10 +77,13 @@
 				<div class="separator_box"></div>
 			</div>
 			<a class="unadorned-nav" href="openings.html">
-				<div class="nav-button">Join us!</div>
+				<div class="nav-button">Openings</div>
 			</a>
 			<div class="separator_line">
 				<div class="separator_box"></div>
+			</div>
+			<div>
+				<img src="images/InvertedActin.jpg" class="nav-image">
 			</div>
 		</div>
 	</div>
@@ -88,53 +94,124 @@
 
 		<div class="research">
 			<div class="research-intro">
-				<h3 class="res-bigpicture">How Mechanical Signals Regulate Biological Function</h3>
-			Mechanical interactions are vital components of the most fundamental cellular processes. Without them, cells would be unable to divide, change shape, move or even form multicellular tissues. Using a process called mechanotransduction, cells can convert these  mechanical signals into biochemical signals to regulate their behavior. These mechanical interactions can happen both inside of the cell and between the cell and its extracellular environment. In either case, cells must spatially and temporally control both the magnitude and kinetics of these interactions.  Our lab is interested in how cells generate, interpret, and use mechanical signals to regulate their behavior. We combine traditional biological approaches with a number of quantitative approaches, including high-resolution microscopy, micropatterning, computational modeling and optogenetics. </div>
+				<h3 class="res-bigpicture">Connecting Mechanics and Biology</h3>
+			Mechanical interactions are essential components of biology. Without them, cells would be unable to change shape, divide, move or even form multicellular tissues. Mechanotransduction is defined as the process of converting mechanical signals into biochemical signals. These mechanical interactions can be initiated inside the cell, such as from myosin motors pulling on actin filaments, or outside the cell, when the cell encounters different physical environments. <b>Our lab is broadly interested in how cells generate, interpret, and use mechanical signals to regulate their behavior.</b> To investigate these processes we primarily use high-resolution quantitative microscopy, coupled with traditional molecular and cell biology approaches and engineering approaches, including micropatterning, optogenetics, and microfluidics. </div>
 		</div>
 
 		<div class="research">
 			<div class="research-intro">
-				<h3 class="res-title">Current Projects</h3>
+				<h3 class="res-bigpicture">Current Projects</h3>
 			</div>
 		</div>
 
 		<div class="research">
-			<div class="research-text">
-				<h3 class="res-title">Mechanobiology of Septin Filaments</h3>
-				The cytoskeleton is a network of filamentous proteins that is continually self-organizing and rearranging in response to different stimuli. In conjunction with various cross-linkers, motors and regulatory binding proteins, these filaments form specific architectures that spatially and temporally regulate many mechanical interactions in the cell. While the cytoskeleton's two most famous components, actin and microtubules, have been studied in great detail, significantly less is known about septins. Septins localize to many mechanically active regions such as the cleavage furrow and the base of cilia, and recognize specific regions of curvature in the membrane. We are interested in potential roles septins might play in organizing and transmitting forces in the cytoskeleton and any mechanosensitive properties they might display.  
+			<div class="research-text-left">
+				<h3 class="res-title">LIM Domain Proteins</h3>
+				A subset of the family of LIM domain proteins have the ability to recognize strained actin filaments. The canonical example of this is zyxin, a protein typically found in focal adhesions, but which relocates to stress fibers tears to help facilitate repair. In the movie we've used a laser to induce a tear and see the protein get recruited. A number of other LIM domain proteins, including paxillin, FHL, and testin, have since been shown to similarly recognize strained actin. This has led to the hypothesis that LIM domain proteins are key players in mechanotransduction - recognizing strained actin via their LIM domains and signaling downstream through their other domains. Some of the questions our lab is interested in include:
+				<ul class=research-list>
+					<li>How do LIM domains recognize strained actin?
+					<li>Can LIM domain protein mechanosensing be regulated?
+					<li>How do cells utilize this process of mechanotransduction? 
+				</ul>
 			</div>
-			<div class="research-img">
+			<div class="research-img-right">
+				<video controls loop muted autoplay>
+					<source type="video/mp4" src="images/TestinLIM.mp4">
+					</video>
+			</div>
+		</div>
+
+		<div class="research">
+			<div class="research-text-right">
+				<h3 class="res-title">Immune Cell Migration</h3>
+				Migration is a fundamental component of cell biology, allowing single cells to find food and multiple cells to form tissues. It is also a crucial component of our immune response as a variety of cells to need to navigate the many complex environments of the body as they recognize antigens and fight off infections. Most  everything we know about migration comes from studying mesenchymal cells because they're slow, large, and relatively flat. Immune cells on the other hand are fast, round, and experts at navigating a host of complex environments. We recently identified that many of the same proteins used for migration in mesenchymal cells are also present in immune cells. Some of the questions we're interested in include:
+				<ul class=research-list>
+					<li>How does immune cell migration differ from mesenchymal migration?
+					<li>How does the environment architecture regulate immune cell migration?
+					<li>How do chemokines and other signaling affect immune cell adhesion? 
+				</ul>
+			</div>
+			<div class="research-img-left">
+				<img class="research-figure" src="images/TcellMigration3.jpg">
+			</div>
+		</div>
+
+		<div class="research">
+			<div class="research-text-left">
+				<h3 class="res-title">Septin Cytoskeleton</h3>
+				The cytoskeleton is a network of filamentous proteins that is continually self-organizing and rearranging in response to different stimuli. In conjunction with various cross-linkers, motors and regulatory binding proteins, these filaments form specific architectures that spatially and temporally regulate many processes in the cell. While the cytoskeleton's two most famous components, actin and microtubules, have been studied in great detail, significantly less is known about septins. Septins localize to many mechanically active regions such as the cleavage furrow and the base of cilia, and recognize specific regions of curvature in the membrane. Some of the questions we're interested in include:
+				<ul class=research-list>
+					<li>Do RhoGTPases regulated septin filament formation?
+					<li>Why do septins preferentially decorate sub-nuclear stress fibers?
+					<li>Are septins involved in mechanotransduction? 
+				</ul>
+  
+			</div>
+			<div class="research-img-right">
 				<img class="research-figure" src="images/ActinSeptin.jpg">
 			</div>
 		</div>
 
 		<div class="research">
-			<div class="research-text">
-				<h3 class="res-title">Mechanosensing via LIM domain proteins</h3>
-				While cells are clearly sensitive to mechanical signals, the mechanisms that mediate this behavior remain unclear. We are approaching this topic from two angles. First, at the protein scale, a number of members in the LIM family, including the focal adhesion proteins zyxin and paxillin, have been shown to be mechanosensitive. Previous research has identified that the LIM domains are sufficient to localize to regions of strain in the cytoskeleton. We are thus interested in how LIM domain proteins recognize strain and whether these mechanisms are conserved across all LIM containing proteins. Second, at the cellular scale, we are interested in how mechanosensitive behaviors emerge from the network activity of the entire cytoskeleton and its components. Specifically we are interested in the basic questions of how cells know where and how hard to pull on their extracellular environment. 
-			</div>
-			<div class="research-img">
-				<video controls loop muted autoplay>
-					<source type="video/mp4" src="images/MyosinRecruitment2.mp4">
-					</video>
-				</div>
-			</div>
-
-			<div class="research">
-				<div class="research-text">
-					<h3 class="res-title">Mechanics of Amoeboid Migration</h3>
-				Cell migration is classically understood through the cyclical repetition of the mechanical processes of protrusion, contraction, and retraction. This cycle accurately describes the slow, steady migration that depends on discrete adhesion sites and contractile bundles that characterize almost all mesenchymal cells. Amoeboid migration on the other hand, is characterized by the lack of distinct and discrete adhesion sites and is thought to be powered via polymerization dynamics of branched actin networks. This migration mode is most often associated with immune cells, but is also accessible by mesenchymal cells in low adhesive and confined environments. We are interested in understanding how cells interact physically with the extracellular environment when they utilize this alternative migration mode. </div>
-				<div class="research-img">
-					<img class="research-figure" src="images/TcellMigration3.jpg">
-				</div>
-			</div>
 			
-			
-
+			<div class="research-text-right">
+				<h3 class="res-title">Spatiotemporal Dynamics of Force Generation</h3>
+				The molecular mechanisms of force generation are well understood. Myosin motors hydrolyze ATP, producing a conformational change that applies a force to the actin it's bound to. This force is propagated along the actin filament, through adhesions proteins to the extracellular matrix. What we lack, however, is a thorough understanding of how this process is regulated at the cellular scale. Namely, how does a cell know where to generate forces? And how much force should it generate? We are broadly interested in deciphering these types of questions and the processes they are linked to, including:
+				<ul class=research-list>
+					<li>How do changes in metabolism affect force production?
+					<li>How do smooth muscle myosin isoforms differ from non-muscle myosin isoforms in modulating force production?
+					<li>Do neurons generate forces at the axon initial segment?
+					<li>And so many more! 
+				</ul>
+			</div>
+			<div class="research-img-left">
+				<img class="research-figure" src="images/TFM_figure2.png">
+			</div>
 		</div>
+
+		<div class="research">
+			<div class="research-intro">
+				<h3 class="res-bigpicture">Collaborations</h3>
+				While we love what we do, we get equally excited to branch out and explore new areas! In the past this has led to a number of novel areas for us. A few highlights from our collaborations are included below:
+			</div>
+		</div>
+
+		<div class="research">		
+			<div class="research-collab">
+				<div><a class="unadorned4" href="publications.html#Wagner_eLife_2023">
+				<h3 class="res-collab-title">XIRP2</h3>
+				A novel mechanosensitive protein in hair cells actin repair
+				</div></a><p>
+				<div><a class="unadorned4" href="publications.html#Vitriol">
+				<h3 class="res-collab-title">Processive Myosin II</h3>
+				Non-muscle myosin II is processive in the right circumstances
+				</div></a><p>
+				<div><a class="unadorned4" href="publications.html#Wang_Deng">
+				<h3 class="res-collab-title">Mitofusin2</h3>
+				How increased Ca2+ impacts RhoA signaling and cell shape
+				</div></a><p>
+				<div><a class="unadorned4" href="publications.html#Bidone_PLoSComputBiol">
+				<h3 class="res-collab-title">Modeling Adhesion Assembly</h3>
+				Exploring the integrin catch-bond behavior in adhesion assembly
+				</div></a><p>
+				<div><a class="unadorned4" href="publications.html#Finegan_EMBOJ">
+				<h3 class="res-collab-title">Cell Division Orientation</h3>
+				Deciphering the role of tension on dividing cells in the drosophila epithelium
+				</div></a><p>
+				<div><a class="unadorned4" href="publications.html#Bridges_JCB">
+				<h3 class="res-collab-title">Septin Curvature Sensing</h3>
+				Septins preferentially recognize micron scale curvature of membranes
+				</div></a>
+			</div>
+		</div>
+		
+			
+			
+
+	</div>
 		<footer>
-			<div class="footer-block" id="footleft"><a class="unadorned" href="https://ssom.luc.edu/physio/">Department of Cell &amp; Molecular Physiology</a></div>
-			<div class="footer-block" id="footright"><a class="unadorned" href="https://ssom.luc.edu/">Loyola University Chicago</a></div>
+			<div class="footer-block" id="footleft"><a class="unadorned3" href="https://ssom.luc.edu/physio/">Department of Cell &amp; Molecular Physiology</a></div>
+			<div class="footer-block" id="footright"><a class="unadorned3" href="https://ssom.luc.edu/">Loyola University Chicago</a></div>
 			<div class="footer-block" id="footcenter">&copy; <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script> Oakes Lab</div>
 		</footer>
 		
