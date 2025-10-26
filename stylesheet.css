@@ -87,6 +87,7 @@ body, html {
 	height: 3px;
 	margin-left: 150px;
 	background-color: #778899;
+	/*background-color: #7b002c;*/
 }
 
 .separator_line {
@@ -297,6 +298,8 @@ li span{
 	margin-left: 3%;
 	float: left;
 	margin-bottom: 1em;
+/*	box-shadow: 2px 2px 5px 2px black;
+	padding: 2% 2% 2% 2%;*/
 }
 .citation {
 	width: 75%;
